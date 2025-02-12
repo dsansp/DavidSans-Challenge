@@ -1,5 +1,7 @@
 package org.QA.cucumber.objects;
 
+import io.restassured.response.Response;
+
 import java.util.List;
 import java.util.Map;
 
@@ -69,5 +71,14 @@ public class ObjectsStored {
 
     public void setPokemonType(String pokemonType) {
         this.pokemonType = pokemonType;
+    }
+    private Response lastResponse;
+
+    public void setLastResponse(Response response) {
+        this.lastResponse = response;
+    }
+
+    public int getLastStatusCode() {
+        return lastResponse != null ? lastResponse.getStatusCode() : 0;
     }
 }
