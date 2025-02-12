@@ -1,0 +1,4 @@
+org\QA\cucumber\CucumberTest.class
+org\QA\cucumber\steps\PokemonSteps.class
+org\QA\cucumber\steps\WebSteps.class
+org\QA\cucumber\objects\ObjectsStored.class
